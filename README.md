@@ -291,25 +291,26 @@ tag | element
 ## Forms
 ```html
 <form action="url" method="post">
-
-<fieldset>
-    <legend>Who are you ?</legend>
-    <label>Login :<input type="text" name="login" /></label><br/>
-    <label for="pswd">Password :</label><input type="password" name="password" id="pswd" /><br/>
-    <input type="radio" name="sex" value="male" />Male<br/>
-    <input type="radio" name="sex" value="female" />Female<br/>
-</fieldset>
-
-<label>Your favorite color : <select name="color">
-    <option>red</option>
-    <option>green</option>
-    <option>blue</option>
-</select></label>
-
-<input type="checkbox" name="available" value="monday" />Monday<br/>
-<input type="checkbox" name="available" value="tuesday" />Tuesday<br/>
-<textarea name="comments" rows="10" cols="30" placeholder="Write comments here"><textarea/>
-<input type="submit" value="Button text">
+    <fieldset>
+        <legend>Who are you ?</legend>
+        <label>Login :<input type="text" name="login" /></label><br/>
+        <label for="pswd">Password :</label><input type="password" name="password" id="pswd" /><br/>
+        <input type="radio" name="sex" value="male" />Male<br/>
+        <input type="radio" name="sex" value="female" />Female<br/>
+    </fieldset>
+    
+    <label>Your favorite color : <select name="color">
+        <option>red</option>
+        <option>green</option>
+        <option>blue</option>
+    </select></label>
+    
+    <input type="checkbox" name="available" value="monday" />Monday<br/>
+    <input type="checkbox" name="available" value="tuesday" />Tuesday<br/>
+    
+    <textarea name="comments" rows="10" cols="30" placeholder="Write your comments here"><textarea/>
+    
+    <input type="submit" value="Button text">
 </form>
 ```
 
