@@ -9,11 +9,18 @@ A reminder of HTML elements.
    - [Paragraphs](#paragraphs)
    - [Formatting](#formatting)
    - [Quotes](#quotes)
- - [Links](#links)
- - [Images](#images)
+ - [Content](#content)
+   - [Links](#links)
+   - [Images](#images)
+   - [Blocks](#blocks)
+ - [Lists](#lists)
+   - [Unordered list](#unordered-list)
+   - [Ordered list](#ordered-list)
+   - [Definition list](#definition-list)
  - [Tables](#tables)
    - [Basic table](#basic-table)
    - [Advanced table](#advanced-table)
+ - [Forms](#forms)
 
 
 ## Minimal page
@@ -125,7 +132,9 @@ tag | element
 **blockquote** | quotation
 
 
-## Links
+## Content
+
+### Links
 ```html
 <a href="url">link</a>
 <a href="url" target=_blank>open in a new window</a>
@@ -138,8 +147,7 @@ tag | element
 --- | ---
 **a** | hyperlink
 
-
-## Images
+### Images
 ```html
 <img src="image.png" alt="description" width="300" height="200" />
 ```
@@ -147,6 +155,63 @@ tag | element
 tag | element
 --- | ---
 **img** | image
+
+### Blocks
+```html
+<div>block</div>
+<span>inline</span>
+```
+
+tag | element
+--- | ---
+**div** | block-level element
+**span** | inline element
+
+
+## Lists
+
+### Unordered list
+```html
+<ul>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+</ul>
+```
+
+tag | element
+--- | ---
+**ul** | unordered list
+**li** | list item
+
+### Ordored list
+```html
+<ol>
+    <li>first</li>
+    <li>second</li>
+    <li>third</li>
+</ol>
+```
+
+tag | element
+--- | ---
+**ol** | ordered list
+**li** | list item
+
+### Definition list
+```html
+<dl>
+    <dt>term</dt><dd>definition</dd>
+    <dt>term</dt><dd>definition</dd>
+    <dt>term</dt><dd>definition</dd>
+</dl>
+```
+
+tag | element
+--- | ---
+**dl** | definition list
+**dt** | term
+**dd** | definition
 
 
 ## Tables
@@ -221,3 +286,46 @@ tag | element
 **thead** | groups headings together
 **tfoot** | groups footers together
 **tbody** | groups other rows
+
+
+## Forms
+```html
+<form action="url" method="post">
+
+<fieldset>
+    <legend>Who are you ?</legend>
+    <label>Login :<input type="text" name="login" /></label><br/>
+    <label for="pswd">Password :</label><input type="password" name="password" id="pswd" /><br/>
+    <input type="radio" name="sex" value="male" />Male<br/>
+    <input type="radio" name="sex" value="female" />Female<br/>
+</fieldset>
+
+<label>Your favorite color : <select name="color">
+    <option>red</option>
+    <option>green</option>
+    <option>blue</option>
+</select></label>
+
+<input type="checkbox" name="available" value="monday" />Monday<br/>
+<input type="checkbox" name="available" value="tuesday" />Tuesday<br/>
+<textarea name="comments" rows="10" cols="30" placeholder="Write comments here"><textarea/>
+<input type="submit" value="Button text">
+</form>
+```
+
+tag | element
+--- | ---
+**form** | form
+**label** | label for input
+**fieldset** | group inputs together
+**legend** | legend for fieldset
+**input** type="*text*" | text input
+**input** type="*password*" | password input
+**input** type="*radio*" | radio button
+**input** type="*checkbox*" | checkbox
+**input** type="*submit*" | send form
+**select** | drop-down list
+**option** | drop-down list item
+**optgroup** | group of drop-down list items
+**datalist** | autocompletion list
+**textarea** | large text input
