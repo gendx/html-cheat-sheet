@@ -21,7 +21,9 @@ A reminder of HTML elements.
    - [Basic table](#basic-table)
    - [Advanced table](#advanced-table)
  - [Forms](#forms)
-
+ - [HTML5 Semantic](#html5-semantic)
+   - [Page layout](#page-layout)
+   - [New elements](#new-elements)
 
 ## Minimal page
 ```html
@@ -330,3 +332,77 @@ tag | element
 **optgroup** | group of drop-down list items
 **datalist** | autocompletion list
 **textarea** | large text input
+
+
+## HTML5 Semantic
+
+### Page layout
+```html
+<header>My website</header>
+<nav>
+    <a href="page1">Page 1</a>
+    <a href="page2">Page 2</a>
+    <a href="page3">Page 3</a>
+</nav>
+
+<section>
+    Hello everybody, Welcome to my website !
+</section>
+
+<article>
+    <header>
+        <h2>Title</h2>
+    </header>
+    <p>
+        My article
+    </p>
+</article>
+
+<aside>
+    Writen by me
+</aside>
+
+<section id="comments">
+    <article>Comment 1</article>
+    <article>Comment 2</article>
+</section>
+
+<footer>
+Copyright notice
+</footer>
+```
+
+tag | element
+--- | ---
+**header** | header of document or section
+**footer** | footer of document or section
+**section** | section
+**article** | article, forum post, blog post, comment
+**aside** | aside content related to surrounding content
+**nav** | navigation links
+
+### New elements
+```html
+<figure>
+    <img src="image.png" alt="figure 1" />
+    <figcaption>Figure 1</figcaption>
+</figure>
+
+<details>
+    <summary>Declaration of M. X on <time datetime="2013-12-25">Christmas day</time></summary>
+    <p>M. X said...</p>
+</details>
+
+Downloading progress : <progress value="53" max="100"></progress>
+Disk space : <meter value="62" min="10" max="350"></meter>
+```
+
+tag | element
+--- | ---
+**figure** | an illustration
+**figcaption** | caption of a figure element
+**details** | details that can be shown or hidden
+**summary** | visible heading of a details element
+**progress** | progress of a task
+**meter** | display a gauge
+**time** | machine-readable time indication
