@@ -103,7 +103,7 @@ tag | element
 ### Formatting
 ```html
 <em>Formatting</em> is <strong>important</strong> !
-(a+b)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sub> + 2ab
+(a+b)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + 2ab
 ```
 
 tag | element
